@@ -1,0 +1,215 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: #004080;
+    color: white;
+}
+
+.logo {
+    
+    display: flex;
+    gap: 0.5rem;
+}
+#logo-text{
+    font-size: 24px;
+    font-weight: bold;
+}
+#GGKF-LOGO{
+    border-radius: 30px;
+    height:50px ;
+    width: 50px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 13px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+    font-style: italic;
+}
+nav ul li a:hover{
+    color: black;
+    font-size:130%;
+    font-weight: bolder;
+    font-style: italic;
+}
+
+.banner {
+    background-image: url('images/maxresdefault.jpeg'); /* Replace with your image */
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+}
+
+.banner-text {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.introduction {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #f4f4f4;
+}
+.highlights {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    width: 200px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.card h3 {
+    margin-top: 0;
+}
+
+.card p {
+    font-size: 14px;
+    color: #666;
+}
+
+.card a {
+    display: inline-block;
+    margin-top: 10px;
+    color: #004080;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.about-us {
+    /* padding: 40px 20px; */
+    background-color: #f7f6f6;
+    gap: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.about-us h2, .about-us h3 {
+    text-align: center;
+    font-size:1.7rem;
+}
+.Aim_objective{
+    display: flex;
+}
+.Aim_objective_image img {
+    height: 250px;
+    width: 300px;
+    margin-top: 130px;
+    margin-left: 30px;
+    border-radius: 20px;
+}
+.Aim_objective ul li{
+    font-weight: bold;
+}
+
+.about-us p {
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 20px auto;
+    text-align: center;
+}
+.about{
+    display: flex;
+}
+.about-image img{
+    height: 250px;
+    width: 300px;
+   margin-top: 30px;
+   margin-left: 30px;
+   border-radius: 20px;
+}
+.about-us ul {
+    max-width: 80%;
+    margin: 0 auto;
+    padding: 0;
+    list-style-type: disc;
+    list-style-position: inside;
+}
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #004080;
+    color: white;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+
+    .cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 100%;
+        max-width: 300px;
+    }
+}
+
+@media (max-width: 480px) {
+    .banner-text h1 {
+        font-size: 24px;
+    }
+
+    .banner-text p {
+        font-size: 14px;
+    }
+}
